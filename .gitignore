@@ -1,0 +1,68 @@
+# ==================================
+# Rust build and dependency outputs
+# ==================================
+/target/
+**/*.rs.bk
+
+# ==================================
+# Rust/Cargo specific files
+# ==================================
+**/*.lock
+!/Cargo.lock  # <- keep Cargo.lock for binary projects (optional)
+
+/Cargo.toml.orig
+**/Cargo.toml.bk
+
+# ==================================
+# IDE and editor settings
+# ==================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ / CLion / RustRover
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Vim
+*.swp
+*.swo
+*.swm
+
+# ==================================
+# OS-specific
+# ==================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ==================================
+# Misc
+# ==================================
+/*.log
+target/
+*.tmp
+*.bak
+*.orig
+
+# Byebug for debugging (just in case)
+.byebug_history
+*/target/*
