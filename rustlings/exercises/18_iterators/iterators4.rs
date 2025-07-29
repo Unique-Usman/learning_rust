@@ -10,10 +10,15 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
+    (1..num + 1).fold(1, |acc, x| acc * x)
 }
 
 fn main() {
     // You can optionally experiment here.
+    assert_eq!(factorial(0), 1);
+    assert_eq!(factorial(4), 24);
+    assert_eq!(factorial(2), 2);
+    assert_eq!(factorial(1), 1);
 }
 
 #[cfg(test)]
