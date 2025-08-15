@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Usman Akinyemi – Developer, Mentor & Open Source Advocate</title>
+    <meta
+      name="description"
+      content="Usman Akinyemi – nomadic programmer, Linux & Open Source mentor. Millennium Fellow 2023. GSoC 2025 contributor."
+    />
+    <style>
+      :root {
+        --bg: #121212;
+        --gradient1: #ff7e5f;
+        --gradient2: #feb47b;
+        --text: #e0e0e0;
+        --accent: #ffd15c;
+        --link: #6cdcdb;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+      header {
+        padding: 120px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, var(--gradient1), var(--gradient2));
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        color: #fff;
+      }
+      header h1 {
+        font-size: 2.8rem;
+        margin: 0 0 0.3em;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+
+      .wrap {
+        max-width: 840px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      section {
+        margin-bottom: 60px;
+      }
+      h2 {
+        font-size: 1.9rem;
+        color: var(--accent);
+        margin-bottom: 0.5em;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 0.5em 0;
+      }
+
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 10px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 600px) {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hi, I’m Usman Akinyemi</h1>
+      <p>
+        Nomadic programmer • Linux & Open Source advocate • Millennium Fellow,
+        GSoC 2025 contributor
+      </p>
+    </header>
+
+    <main class="wrap">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I’m based in Ibadan, Nigeria — a passionate developer and mentor with
+          a strong footing in Linux and open source culture. I’ve contributed to
+          projects like Git, systemd, CPython docs, LibreOffice, and more.
+        </p>
+        <p>
+          Let’s connect: <a href="#">GitHub</a> •
+          <a href="mailto:you@example.com">Email</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Millennium Fellowship 2023</h2>
+        <div class="card">
+          As a Millennium Fellow selected in 2023 through Plaksha University, I
+          led and co-created the
+          <strong
+            >“Lead and Code Youth Technology Mentorship Program #Linux”</strong
+          >. We mentored Nigerian youth—guiding them in Git, open source, career
+          development, and creating an encouraging tech community.
+          :contentReference[oaicite:1]{index=1}
+        </div>
+      </section>
+
+      <section>
+        <h2>GSoC 2025 Project</h2>
+        <div class="card">
+          <strong>Medical Imaging Pipeline</strong><br />
+          Developed a scalable medical imaging pipeline using Docker,
+          Kubernetes, Airflow/Argo, and Kaapana (as part of GSoC 2025).
+        </div>
+      </section>
+
+      <section>
+        <h2>Open Source Contributions</h2>
+        <div class="cards">
+          <div class="card">Git (Outreachy)</div>
+          <div class="card">systemd</div>
+          <div class="card">CPython docs</div>
+          <div class="card">LibreOffice</div>
+          <div class="card">pep8speaks</div>
+          <div class="card">OSIPI</div>
+          <div class="card">LLVM & more…</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Get in Touch</h2>
+        <p>
+          I’m always open to chatting about open source, mentoring, or building
+          something exciting together.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
